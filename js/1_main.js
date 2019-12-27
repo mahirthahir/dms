@@ -27,5 +27,3 @@ $(document).ready(function(){
 	
 });
   
- //mahir
- //mahir-added

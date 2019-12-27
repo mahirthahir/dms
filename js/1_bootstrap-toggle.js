@@ -178,6 +178,3 @@
 	})
 
 }(jQuery);
-
-//mahir
-//mahir-added
