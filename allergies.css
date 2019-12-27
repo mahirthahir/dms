@@ -1,0 +1,187 @@
+.allergies_wrapper_div {
+	border: 2px solid #ececec;
+	margin:20px;
+	padding:20px;
+}
+.allergies_wrapper_div .mt10 {margin-top:10px;}
+.allergies_wrapper_div .pl0 {padding-left:0;}
+.allergies_wrapper_div .status_active, .mild {color:#28a745;}
+.allergies_wrapper_div .status_resolved {color:#007bff;}
+.allergies_wrapper_div .moderate {color:#ffa640;}
+.allergies_wrapper_div .severe {color:#ff0000;}
+
+.allergies_wrapper_div .allergy_title {color:#274b70;}
+.allergies_wrapper_div .sort-wrapper {font-size:12px;text-align: right;color:#a3a2a2;}
+
+.allergies_wrapper_div .sort-wrapper .sort_active {text-decoration:underline;cursor:pointer;}
+.allergies_wrapper_div .sort-wrapper .sort_resolved {cursor:pointer;}
+.allergies_wrapper_div .sort-wrapper .sort_clear {text-decoration:underline;cursor:pointer;}
+
+.allergies_wrapper_div .search_wrapper {position:relative;}
+.allergies_wrapper_div .search_wrapper .search_allergies {border-radius:0;}
+.allergies_wrapper_div .search_wrapper .search_allergies::placeholder {color: #bebebe; font-size:12px;}
+
+.allergies_wrapper_div .sort-wrapper ul {margin-bottom:0;}
+.allergies_wrapper_div .sort-wrapper ul li {display:inline-block;line-height: 38px;padding-left:5px;font-weight:600;}
+
+.allergies_wrapper_div .tab_nav_wrapper div {
+	display:inline-block;
+	padding:5px 10px;
+	text-align:center;
+	font-size:12px;
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.allergies_wrapper_div .tab_nav_wrapper .tab_item_count {margin-left:3px;}
+.allergies_wrapper_div .tab_nav_wrapper .current_tab {background-color: #ededed;font-weight:600;}
+
+.allergies_wrapper_div .content_div .title_div {background-color: #ffffff;}
+.allergies_wrapper_div .content_div .title_div .cont_title {font-size:14px;background-color: #ffffff;line-height: 33px;font-weight:600;}
+.allergies_wrapper_div .content_div .title_div .title_hr {border-top:2px solid #69abe3;}
+
+.allergies_wrapper_div .content_div .details_div {border: 1px solid #dddddd;}
+.allergies_wrapper_div .content_div .details_div .details_div_body {padding:10px;}
+.allergies_wrapper_div .content_div .details_div h6 {display:inline-block;font-weight:700;}
+.allergies_wrapper_div .content_div .details_div .cont_status {font-weight:600;margin-left:15px;font-size:14px;}
+
+.allergies_wrapper_div .content_div .details_div .details_div_body .det_col_1 {display:inline-block;width:80px;font-size:14px;}
+.allergies_wrapper_div .content_div .details_div .details_div_body .det_col_2 {display:inline-block;width:80px;font-size:14px;}
+.allergies_wrapper_div .content_div .details_div .details_div_body .det_col_3 {display:inline-block;font-size:14px;}
+.allergies_wrapper_div .content_div .details_div .details_div_body .det_col_2.remark {width:auto;}
+
+.allergies_wrapper_div .content_div .details_div .details_div_body .wrap_edit_icon {display: inline-block;margin-right: 20px;cursor:pointer;}
+.allergies_wrapper_div .content_div .details_div .details_div_body .wrap_edit_icon i {vertical-align: -1px;}
+.allergies_wrapper_div .content_div .details_div .details_div_body .wrap_res_btn {display: inline-block;}
+
+.allergies_wrapper_div .content_div .details_div .details_div_footer {padding:5px 0 5px 10px;background-color:#f6f5f5;color:#a3a2a2;border-top: 1px solid #dddddd;}
+.allergies_wrapper_div .content_div .details_div.resolved {border-color: #69abe3;}	
+.allergies_wrapper_div .content_div .details_div.resolved .details_div_footer {border-top:1px solid #69abe3;background-color: #e9f0f5;}
+.allergies_wrapper_div .content_div .details_div .details_div_footer .added_by {font-size:12px;}
+.allergies_wrapper_div .content_div .details_div .details_div_footer .added_by ul {margin-bottom: 0;}
+.allergies_wrapper_div .content_div .details_div .details_div_footer .added_by ul li {display: inline-block;}
+.allergies_wrapper_div .content_div .details_div .details_div_footer .added_by ul li.add_lbl {margin-right:5px;}
+.allergies_wrapper_div .content_div .details_div .details_div_footer .added_by ul li.add_cont {margin-right:25px;font-weight:600;}
+
+/* Screen 2  - Add Allergy - Overlay */
+.allergies_wrapper_div .search_wrapper .search_list_div {
+	height:450px; 
+	width:100%; 
+	top: 0;
+	margin-top: 5px;
+	padding:15px;
+	position:absolute;
+	background-color:#ffffff;
+	z-index:1001;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .1);
+	overflow:auto;
+}
+.allergies_wrapper_div .search_wrapper .search_reset {position:absolute;right:25px;top:35px;color:#000;cursor:pointer;}	
+.allergies_wrapper_div .search_list_div .list-group {line-height:18px;margin-top: 3px;}
+.allergies_wrapper_div .search_list_div .list-group-item {padding:12px 10px;border-radius:0;}
+.allergies_wrapper_div .search_list_div .list-group .list_title {font-size:14px;font-weight:600;}
+.allergies_wrapper_div .search_list_div .list-group .list_btn {padding:2px 30px;position: absolute;right: 10px;bottom: 10px;}
+.allergies_wrapper_div .search_list_div .list-group .list_cat {display:block;font-size:14px;margin-top:5px;}
+
+/* Screen 3  - Add Allergy - Modal */
+.modal-backdrop {background-color: #ccc;}	
+#addAllergyModal .modal-content {
+	border-radius:0;
+	border:0;
+	-webkit-box-shadow: 2px 3px 5px 0px rgba(189,189,189,1);
+	-moz-box-shadow: 2px 3px 5px 0px rgba(189,189,189,1);
+	box-shadow: 2px 3px 5px 0px rgba(189,189,189,1);
+}
+#addAllergyModal .modal-top {padding:16px;}
+#addAllergyModal .modal-top button {padding: 2px 30px;}
+#addAllergyModal .modal-top .modal-top-inner {font-size:14px;}
+#addAllergyModal .modal-top .modal-top-inner div {display:inline-block;}
+#addAllergyModal .modal-top .modal-top-inner .mdl_lbl {width:70px;}
+#addAllergyModal .modal-top .modal-top-inner .alg_anme {font-weight:600;}
+#addAllergyModal .modal-top .modal-top-inner .alg_cat {font-style:italic;}
+
+#addAllergyModal .modal-body .mdl-body-top {background-color:#ededed;font-size:12px;font-weight:600;padding:7px;}
+#addAllergyModal .modal-body .mdl-body-top-left {display:inline-block;width:79%;padding-left: 38px;}
+#addAllergyModal .modal-body .mdl-body-top-right {display:inline-block;width:19%;}
+#addAllergyModal .modal-body .alg-btn-grp .btn-select {background-color:#fff;font-size:14px;border:1px solid #ccc;}
+#addAllergyModal .modal-body .alg-btn-grp .btn-select.sel-mild {background-color:#28a745;color:#fff;border-color:#28a745;}
+#addAllergyModal .modal-body .alg-btn-grp .btn-select.sel-mod {background-color:#ffa640;color:#fff;border-color:#ffa640;}
+#addAllergyModal .modal-body .alg-btn-grp .btn-select.sel-sev {background-color:#ff0000;color:#fff;border-color:#ff0000;}
+
+#addAllergyModal .modal-body .alg-item-line {font-size:14px;padding-top:10px;padding-left: 15px;}
+#addAllergyModal .mt10 {margin-top:10px;}
+#addAllergyModal .mt20 {margin-top:20px;}
+
+#addAllergyModal .modal-body .mdl-body-bot-left {width:100px;display:inline-block;vertical-align:top;font-size:14px;}	
+#addAllergyModal .modal-body .mdl-body-bot-right {display:inline-block;width: 82%;}	
+#addAllergyModal .alg-remark::placeholder {color: #bebebe; font-size:14px;}
+	
+/* custome checkbox - start */
+#addAllergyModal .ckbx_container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#addAllergyModal .ckbx_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+#addAllergyModal .ckbx_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+	border:2px solid #c6d8e7;	
+	border-radius:4px;
+}
+#addAllergyModal .ckbx_container input:checked ~ .ckbx_checkmark {border-radius:4px;border-color:#00a65c;}
+#addAllergyModal .ckbx_checkmark:after {content: "";position: absolute;display: none;}
+#addAllergyModal .ckbx_container input:checked ~ .ckbx_checkmark:after {display: block;}
+#addAllergyModal .ckbx_container .ckbx_checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border: solid #00a65c;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}	
+/* custome checkbox - end */
+
+/* Screen 4  - Resolve Allergy - Modal */
+.modal-backdrop {background-color: #ccc;}	
+#resolveModal .modal-content {
+	border-radius:0;
+	border:0;
+	-webkit-box-shadow: 2px 3px 5px 0px rgba(189,189,189,1);
+	-moz-box-shadow: 2px 3px 5px 0px rgba(189,189,189,1);
+	box-shadow: 2px 3px 5px 0px rgba(189,189,189,1);
+}
+#resolveModal .modal-top {padding:16px;}
+#resolveModal .modal-top button {padding: 2px 30px;}
+#resolveModal .modal-top .modal-top-inner h5 {margin-bottom:0;line-height:28px;}
+
+#resolveModal .modal-body .modal-body-top {font-size:14px;}
+#resolveModal .modal-body .modal-body-top div {display:inline-block;}
+#resolveModal .modal-body .modal-body-top .mdl_lbl {width:70px;}
+#resolveModal .modal-body .modal-body-top .alg_anme {font-weight:600;}
+#resolveModal .modal-body .modal-body-top .alg_cat {font-style:italic;}
+#resolveModal .mt20 {margin-top:20px;}
+
+#resolveModal .modal-body .mdl-body-bot-left {width:70px;display:inline-block;vertical-align:top;font-size:14px;}	
+#resolveModal .modal-body .mdl-body-bot-right {display:inline-block;width: 90%;}	
+#resolveModal .alg-remark::placeholder {color: #bebebe; font-size:14px;}

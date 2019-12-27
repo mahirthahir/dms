@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" >
+
+<head>
+    <title>Vida Plus - Patient Management System</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/csi_favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="allergies.css">
+
+</head>
+
+<body>
+
+	<!-- Allergies Component -->
+	
+			<div class="allergies_wrapper_div">
+								
+				<div class="row">				
+					<div class="col-4"><h5 class="allergy_title">Allergies</h5></div>					
+					<div class="col-8 text-right">
+						<button type="button" class="btn btn-secondary btn-sm">History</button>
+						<button type="button" class="btn btn-primary btn-sm">Unable to obtain allergy</button>
+						<button type="button" class="btn btn-primary btn-sm">No known allergy</button>
+						<button type="button" class="btn btn-primary btn-sm btn-add-allery">Add new allergy</button>
+					</div>
+				</div>				
+				
+				<div class="row mt10">				
+					<div class="col-12">
+						<div class="search_wrapper">							
+							<div class="sort-wrapper">
+								<ul class="list-unstyled">
+									<li>Sort by:</li>
+									<li class="sort_active text-success">Active</li>
+									<li class="sort_resolved text-primary">Resolved</li>
+									<li class="sort_clear">Clear</li>
+								</ul>
+							</div>
+							
+							<!-- add allergy div -->	
+							<div class="search_list_div" style="display:none;">								
+								<div class="row">								
+									<div class="col-12">						
+										<h6>Add Allergies</h6>
+										<input type="text" class="form-control search_allergies" placeholder="Search Allergies">
+										<div class="search_reset"><i class="fa fa-times-circle"></i></div>
+										<ul class="list-group">
+											<li class="list-group-item">
+												<span class="list_title">Medication (2)</span>											
+												<button type="button" class="btn btn-primary btn-sm list_btn">Add</button>
+												<span class="list_cat">Acetaminophen Table</span>
+											</li>
+											<li class="list-group-item">
+												<span class="list_title"></span>											
+												<button type="button" class="btn btn-primary btn-sm list_btn">Add</button>
+												<span class="list_cat">Medication allergy two</span>
+											</li>
+											<li class="list-group-item">
+												<span class="list_title">Food (1)</span>											
+												<button type="button" class="btn btn-primary btn-sm list_btn">Add</button>
+												<span class="list_cat">Food allergy one</span>
+											</li>	
+											<li class="list-group-item">
+												<span class="list_title">Insect (1)</span>											
+												<button type="button" class="btn btn-primary btn-sm list_btn">Add</button>
+												<span class="list_cat">Insect allergy one</span>
+											</li>											
+										</ul>										
+									</div>	
+								</div>						
+							</div>
+							<!-- /- add allergy div -->							
+						</div>	
+					</div>									
+				</div>
+								
+				<div class="row mt10">					
+					<div class="col-12">					
+						<div class="tab_nav_wrapper">
+							<div class="tab_item_title current_tab">All<span class="tab_item_count">(3)</span></div>
+							<div class="tab_item_title">Medication<span class="tab_item_count">(1)</span></div>
+							<div class="tab_item_title">Food<span class="tab_item_count">(1)</span></div>
+							<div class="tab_item_title">Insects<span class="tab_item_count">(0)</span></div>
+							<div class="tab_item_title">Substance<span class="tab_item_count">(0)</span></div>
+							<div class="tab_item_title">Other Allergen<span class="tab_item_count">(1)</span></div>
+						</div>
+					</div>
+				</div>					
+
+				<!-- Repeating -->	
+				<div class="content_div mt10">
+				
+					<div class="title_div">	
+						<div class="row">
+							<div class="col-1"><div class="cont_title status_active">Active (1)</div></div>
+							<div class="col-11 pl0"><hr class="title_hr"></div>
+						</div>
+					</div>
+					
+					<div class="details_div">
+					
+						<div class="details_div_body">
+						
+							<div class="row">
+								<div class="col-12"><h6>TraMADol (100 mg/ml) Solution (Analgesic)</h6><span class="cont_status status_active">Active</span></div>
+							</div>
+					
+							<div class="row">							
+								<div class="col-9">							
+									<div class="row">								
+										<div class="col-12">
+											<div class="det_col_1">Symptoms:</div>
+											<div class="det_col_2 mild">Mild</div>
+											<div class="det_col_3">Stomach pain</div>										
+										</div>									
+										<div class="col-12">
+											<div class="det_col_1"></div>
+											<div class="det_col_2 moderate">Moderate</div>
+											<div class="det_col_3">Rash, Rash Type 2</div>										
+										</div>									
+										<div class="col-12">
+											<div class="det_col_1"></div>
+											<div class="det_col_2 severe">Severe</div>
+											<div class="det_col_3">Sneezing</div>										
+										</div>									
+										<div class="col-12">
+											<div class="det_col_1">Remarks:</div>
+											<div class="det_col_2 remark">Allergy remark content goes here.. Allergy remark content goes here..</div>									
+										</div>
+									</div>							
+								</div>															
+								<div class="col-3 text-right">
+									<div class="rightBtn_wrapper">
+										<div class="wrap_edit_icon"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+										<div class="wrap_res_btn"><button type="button" class="btn btn-primary btn-sm">Resolve</button></div>
+									</div>								
+								</div>							
+							</div>
+
+						</div>
+						
+						<div class="details_div_footer">
+							<div class="added_by">
+								<ul class="list-unstyled">
+									<li class="add_lbl">Added by:</li>
+									<li class="add_cont">Dr. Safi Al-Hassan</li>
+									<li class="add_lbl">Added Date:</li>
+									<li class="add_cont">15/12/2019</li>
+									<li class="add_lbl">Added Time:</li>
+									<li class="add_cont">10:30 AM</li>
+								</ul>							
+							</div>
+						</div>
+					
+					</div>
+					
+				</div>
+				
+				<!-- Repeating -->	
+				<div class="content_div mt10">
+				
+					<div class="title_div">	
+						<div class="row">
+							<div class="col-1"><div class="cont_title status_resolved">Resolved (2)</div></div>
+							<div class="col-11 pl0"><hr class="title_hr"></div>
+						</div>
+					</div>
+					
+					<div class="details_div">
+					
+						<div class="details_div_body">
+						
+							<div class="row">
+								<div class="col-12"><h6>Other: Mint</h6><span class="cont_status status_resolved">Resolved</span></div>
+							</div>
+					
+							<div class="row">							
+								<div class="col-9">							
+									<div class="row">								
+										<div class="col-12">
+											<div class="det_col_1">Symptoms:</div>
+											<div class="det_col_2 mild">Mild</div>
+											<div class="det_col_3">Wheezing</div>										
+										</div>																												
+										<div class="col-12">
+											<div class="det_col_1">Remarks:</div>
+											<div class="det_col_2 remark">Allergy remark content goes here.. Allergy remark content goes here..</div>									
+										</div>
+									</div>							
+								</div>															
+								<div class="col-3 text-right">
+									<div class="rightBtn_wrapper">
+										<div class="wrap_edit_icon"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+										<div class="wrap_res_btn"><button type="button" class="btn btn-primary btn-sm">Resolve</button></div>
+									</div>								
+								</div>							
+							</div>
+
+						</div>
+						
+						<div class="details_div_footer">
+							<div class="added_by">
+								<ul class="list-unstyled">
+									<li class="add_lbl">Added by:</li>
+									<li class="add_cont">Dr. Safi Al-Hassan</li>
+									<li class="add_lbl">Added Date:</li>
+									<li class="add_cont">15/12/2019</li>
+									<li class="add_lbl">Added Time:</li>
+									<li class="add_cont">10:30 AM</li>
+								</ul>
+							
+							</div>
+						</div>
+					
+					</div>
+					
+					<!-- Resolved -->
+					<div class="details_div resolved mt10">
+					
+						<div class="details_div_body">
+						
+							<div class="row">
+								<div class="col-12"><h6>No Known Allergies</h6><span class="cont_status status_resolved">Resolved</span></div>
+							</div>
+					
+							<div class="row">							
+								<div class="col-9">							
+									<div class="row">																																													
+										<div class="col-12">
+											<div class="det_col_1">Remarks:</div>
+											<div class="det_col_2 remark">Allergy remark content goes here.. Allergy remark content goes here..</div>									
+										</div>
+									</div>							
+								</div>															
+								<div class="col-3 text-right">
+									<div class="rightBtn_wrapper">
+										<div class="wrap_edit_icon"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+										<div class="wrap_res_btn"><button type="button" class="btn btn-primary btn-sm">Resolve</button></div>
+									</div>								
+								</div>							
+							</div>
+
+						</div>
+						
+						<div class="details_div_footer">
+							<div class="added_by">
+								<ul class="list-unstyled">
+									<li class="add_lbl">Added by:</li>
+									<li class="add_cont">Dr. Safi Al-Hassan</li>
+									<li class="add_lbl">Added Date:</li>
+									<li class="add_cont">15/12/2019</li>
+									<li class="add_lbl">Added Time:</li>
+									<li class="add_cont">10:30 AM</li>
+								</ul>
+							
+							</div>
+						</div>
+					
+					</div>
+					
+				</div>
+								
+			</div>		
+
+
+
+	<!-- Add Allergy Modal -->
+
+	<div class="modal fade" id="addAllergyModal" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<div class="modal-top">
+						<div class="row">
+							<div class="col-8">
+								<div class="modal-top-inner">
+									<div class="mdl_lbl">Allergy:</div><div class="mdl_ctnt alg_anme">Acetaminophen Tablet</div>
+									<br/>
+									<div class="mdl_lbl">Category:</div><div class="mdl_ctnt alg_cat">Medication</div>	
+								</div>								
+							</div>							
+							<div class="col-4 text-right">
+								<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+								<button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- Message -->
+
+					<div class="modal-body">
+					
+						<div class="mdl-body-top">
+							<div class="mdl-body-top-left">Reaction (2)</div>
+							<div class="mdl-body-top-right">Severity</div>
+						</div>
+					
+						<div class="row mt10">						
+							<div class="col-8">															
+								<div class="alg-item-line">									
+									<label class="ckbx_container">Stomack Pain
+										<input type="checkbox">
+										<span class="ckbx_checkmark"></span>
+									</label>									 
+								</div> 
+							</div>							
+							<div class="col-4">
+								<div class="btn-group alg-btn-grp">
+								  <button type="button" class="btn btn-select sel-mild">Mild</button>
+								  <button type="button" class="btn btn-select">Moderate</button>
+								  <button type="button" class="btn btn-select">Severe</button>
+								</div>
+							</div>							
+						</div>
+						
+						<div class="row mt10">						
+							<div class="col-8">																								
+								<div class="alg-item-line">									
+									<label class="ckbx_container">Respiratory Problems
+										<input type="checkbox">
+										<span class="ckbx_checkmark"></span>
+									</label>									 
+								</div>
+							</div>							
+							<div class="col-4">
+								<div class="btn-group alg-btn-grp">
+								  <button type="button" class="btn btn-select">Mild</button>
+								  <button type="button" class="btn btn-select">Moderate</button>
+								  <button type="button" class="btn btn-select">Severe</button>
+								</div>
+							</div>							
+						</div>
+						
+						<div class="row mt10">						
+							<div class="col-8">															
+								<div class="alg-item-line">																																			
+									<label class="ckbx_container">Rash
+										<input type="checkbox">
+										<span class="ckbx_checkmark"></span>
+									</label>									 																	 
+								</div>									
+							</div>							
+							<div class="col-4">
+								<div class="btn-group alg-btn-grp">
+								  <button type="button" class="btn btn-select">Mild</button>
+								  <button type="button" class="btn btn-select sel-mod">Moderate</button>
+								  <button type="button" class="btn btn-select">Severe</button>
+								</div>
+							</div>							
+						</div>
+						
+						<div class="row mt10">						
+							<div class="col-8">																							
+								<div class="alg-item-line">																																			
+									<label class="ckbx_container">Vomitting
+										<input type="checkbox">
+										<span class="ckbx_checkmark"></span>
+									</label>									 																	 
+								</div>
+							</div>							
+							<div class="col-4">
+								<div class="btn-group alg-btn-grp">
+								  <button type="button" class="btn btn-select">Mild</button>
+								  <button type="button" class="btn btn-select">Moderate</button>
+								  <button type="button" class="btn btn-select">Severe</button>
+								</div>
+							</div>							
+						</div>
+						
+						<div class="row mt10">						
+							<div class="col-8">															
+								<div class="alg-item-line">																																			
+									<label class="ckbx_container">Asthma
+										<input type="checkbox">
+										<span class="ckbx_checkmark"></span>
+									</label>									 																	 
+								</div>								
+							</div>							
+							<div class="col-4">
+								<div class="btn-group alg-btn-grp">
+								  <button type="button" class="btn btn-select">Mild</button>
+								  <button type="button" class="btn btn-select">Moderate</button>
+								  <button type="button" class="btn btn-select sel-sev">Severe</button>
+								</div>
+							</div>							
+						</div>
+									
+						<div class="row mt20">
+							<div class="col-12">
+								<div class="mdl-body-bot-left">Remarks:</div>
+								<div class="mdl-body-bot-right"><textarea class="form-control alg-remark" rows="3" placeholder="Enter remark here"></textarea></div>
+							</div>
+							
+						</div>
+					
+					</div>
+                
+					<!-- /- Message -->
+					
+					
+				</div>
+			</div>
+	</div>		
+
+
+
+<!-- Resolve Modal -->
+
+	<div class="modal fade" id="resolveModal" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<div class="modal-top">
+						<div class="row">
+							<div class="col-8">
+								<div class="modal-top-inner">									
+									<h5>Resolve Allergy</h5>
+								</div>								
+							</div>							
+							<div class="col-4 text-right">
+								<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+								<button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Resolve</button>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- Message -->
+
+					<div class="modal-body">
+
+						<div class="row">
+							<div class="col-12">
+								<div class="modal-body-top">
+									<div class="mdl_lbl">Allergy:</div><div class="mdl_ctnt alg_anme">Acetaminophen Tablet</div>
+									<br>
+									<div class="mdl_lbl">Category:</div><div class="mdl_ctnt alg_cat">Medication</div>	
+								</div>
+							</div>							
+							
+						</div>
+						<div class="row mt20">
+							<div class="col-12">
+								<div class="mdl-body-bot-left">Remarks:</div>
+								<div class="mdl-body-bot-right"><textarea class="form-control alg-remark" rows="5" placeholder="Enter remark here"></textarea></div>
+							</div>
+							
+						</div>
+					
+					</div>
+                
+					<!-- /- Message -->
+					
+				</div>
+			</div>
+	</div>		
+
+
+
+
+
+
+	<!-- /- Allergies Component -->
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery.min.js"></script>		
+        <script src="js/popper.min.js"></script>
+		<script src="js/bootstrap-toggle.js"></script>  
+		<script src="js/bootstrap.min.js"></script>		
+        <script src="js/main.js"></script>
+		
+</body>
+
+</html>
+
+                                
+
+                           
